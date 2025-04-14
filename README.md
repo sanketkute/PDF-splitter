@@ -52,14 +52,23 @@ Run the script from your terminal (make sure your environment is activated):
 
 ```bash
 python pdf_splitter_script.py # Replace with your script's filename if different
-The script will prompt you for:Path to the input PDF file: Enter the full path to the PDF you want to split.Path for the output directory: Specify where the resulting PDF files should be saved. A default suggestion will be provided.Splitting mode: Choose either chunks or range.If chunks: Enter the desired number of pages per chunk file (e.g., 1000).If range: Enter the page range in the format start-end (e.g., 1232-2421).Output files will be named based on the original filename and the chunk/page range.Example(split_PDF) C:\Users\YourUser\Desktop\Projects\SplitPDF> python pdf_splitter_script.py
+```
+
+The script will prompt you for:
+1. Path to the input PDF file: Enter the full path to the PDF you want to split.
+2. Path for the output directory: Specify where the resulting PDF files should be saved. A default suggestion will be provided.
+3. Splitting mode: Choose either `chunks` or `range`.
+    * If `chunks`: Enter the desired number of pages per chunk file (e.g., `1000`).
+    * If `range`: Enter the page range in the format `start-end` (e.g., `1232-2421`).
+Output files will be named based on the original filename and the chunk/page range.
+
+## Example
+
+```bash
+(split_PDF) C:\Users\YourUser\Desktop\Projects\SplitPDF> python pdf_splitter_script.py
 Enter the path to the PDF file (e.g., C:\Docs\report.pdf): C:\Docs\report.pdf
 Enter the path for the output directory (e.g., C:\Docs\output_split): C:\Docs\split_output
 Choose splitting mode ('chunks' or 'range'): range
 Enter the page range to extract (e.g., 1232-2421): 10-25
 Attempting to open PDF: C:\Docs\report.pdf
-Extracting pages 10 to 25...
-Saved: C:\Docs\split_output\report_Pages_10-25.pdf
-
-PDF processing finished.
-ContributingFeel free to open issues or submit pull requests if you have suggestions for
+```
